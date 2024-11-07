@@ -3,6 +3,14 @@
 
 This repository contains code for detecting manipulated CT scan images by finding their closest match to the original images in a database. This approach helps identify if an image has been altered through adversarial or cyber-attacks, thus maintaining the integrity and trustworthiness of CT scan data. The model uses deep learning for feature extraction and a combination of texture and histogram analysis, along with VGG16 pre-trained on ImageNet, to compare and find the most similar original image corresponding to a manipulated CT scan.
 
+
+# Dataset
+The model is trained and tested using the SIIM Medical Images dataset. This dataset, available on Kaggle and downloaded using kagglehub, provides a comprehensive set of medical images ideal for experiments involving image manipulation and feature extraction for detection tasks. You can access and download the latest version of the dataset with the following command:
+
+
+path = kagglehub.dataset_download("kmader/siim-medical-images")
+
+
 # Project Overview
 
 
